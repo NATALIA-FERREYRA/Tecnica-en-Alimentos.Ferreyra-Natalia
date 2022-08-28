@@ -42,7 +42,7 @@ main {
 }
 
 footer {
-    background-color: rgb(26, 209, 108);
+    background-color: rgb(241, 210, 250);
     grid-area: contacto;
     display: flex;
     align-items:center;
@@ -55,7 +55,7 @@ footer {
 footer:hover {
     width: 300px;
     font-size: 15px;
-    background: linear-gradient(rgb(153, 247, 153),rgb(252, 166, 252));
+    background: linear-gradient(rgb(252, 166, 252),rgb(153, 247, 153));
 }
 
 .menu {
@@ -84,7 +84,6 @@ footer:hover {
 }
 
 .imagen {
-    background-image: url(../aseets/img/logo.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -311,10 +310,10 @@ div h4 {
 @media (max-width: 768px) {
     body {
         grid-template-areas: 
-        "navegador datos datos"
-        "navegador info info"
-        "contacto contacto contacto";
-        grid-template-columns: 1fr auto 1fr;
+        "navegador datos"
+        "navegador info"
+        "contacto contacto";
+        grid-template-columns: 1fr auto;
         padding: 5px;
     }
     .servicios {
@@ -325,10 +324,10 @@ div h4 {
         flex-direction: column-reverse;   
     }
     .titulo h1 {
-        font-size: 20px;
+        font-size: 15px;
         border: none;
         text-decoration: underline;
-        font-weight: 800;
+        font-weight: 600;
     }
     .titulo h2 {
         padding: 10px;
@@ -374,14 +373,14 @@ div h4 {
         font-size: 15px;
     }
     .texto1 {
-        background-color:rgb(68, 49, 235);
+        background-color:rgb(89, 138, 26);
         color: white;
         font-size: 10px;
     }
     
     div h3 {
-        color: white;
-        background-color: rgb(29, 46, 126);
+        color: black;
+        background: linear-gradient(rgb(153, 247, 153),rgb(252, 166, 252));
         font-size: 15px;
         font-weight: 100;
     }

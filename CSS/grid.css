@@ -10,12 +10,12 @@ body {
     background-color: rgb(229, 253, 236);
     display: grid;
     grid-template-areas: 
-    "navegador datos datos"
-    "navegador info info"
+    "datos datos navegador"
+    "info info info"
     ". . contacto";
     gap: 7px;
     height: 100vh;
-    grid-template-columns: 200px auto 350px;
+    grid-template-columns: 3fr auto 1fr;
     padding: 10px;
 }
 
@@ -48,13 +48,13 @@ footer {
     align-items:center;
     justify-content:center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 17px;
     color: black;
     transition: all 0.5s;
 }
 footer:hover {
     width: 300px;
-    font-size: 15px;
+    font-size: 13px;
     background: linear-gradient(rgb(252, 166, 252),rgb(153, 247, 153));
 }
 
@@ -162,10 +162,11 @@ footer:hover {
 
 .contacto {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction:row;
     text-decoration: underline;
-    font-size: 30px;
-    line-height: 2;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.5;
 }
 
 #servicio {
@@ -277,9 +278,12 @@ div h4 {
     color: black;
     width: 60%;
     height: 100%;
-    font-size: 20px;
+    font-size: 15px;
+    font-weight: 500;
     font-family:Arial, Helvetica, sans-serif;
     padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
 }
 
 .consulta1 {
@@ -293,18 +297,31 @@ div h4 {
 
 .cons {
     padding-top: 10px;
+    padding-left: 10px;
     color: black;
     text-decoration: underline;
-    font-size: 25px;
+    font-size: 27px;
+    font-weight:bold;
 }
 
 .enviar {
     background-color: white;
     color: black;
-    width: 15%;
+    width: 20%;
     height: 10%;
     font-size: 18px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.formulario1 {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+.formulario2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 500px;
 }
 
 @media (max-width: 768px) {

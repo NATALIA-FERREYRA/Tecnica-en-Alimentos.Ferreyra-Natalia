@@ -328,9 +328,9 @@ div h4 {
     body {
         grid-template-areas: 
         "navegador datos"
-        "navegador info"
+        "info info"
         "contacto contacto";
-        grid-template-columns: 1fr auto;
+        grid-template-columns: 1fr auto auto;
         padding: 5px;
     }
     .servicios {

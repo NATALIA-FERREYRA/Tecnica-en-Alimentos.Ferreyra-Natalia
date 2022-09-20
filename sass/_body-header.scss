@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(229, 253, 236);
+    display: grid;
+    grid-template-areas: 
+    "datos datos navegador"
+    "info info info"
+    ". . contacto";
+    gap: 7px;
+    height: 100vh;
+    grid-template-columns: 3fr auto 1fr;
+    padding: 10px;
+}
+
+header {
+    background: linear-gradient(rgb(153, 247, 153),rgb(252, 166, 252));
+    grid-area: navegador;
+    padding: 8px;
+}

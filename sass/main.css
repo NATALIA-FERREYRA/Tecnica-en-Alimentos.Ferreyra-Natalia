@@ -22,7 +22,7 @@ header {
   padding: 8px;
 }
 
-section__servicio {
+section #servicio {
   color: black;
   line-height: 2;
   text-align: center;
@@ -33,7 +33,7 @@ section__servicio {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 20px;
 }
-section__servicioH {
+section #servicioH {
   text-align: center;
   font-weight: 800;
   display: flex;
@@ -42,11 +42,11 @@ section__servicioH {
   padding-top: 10px;
   padding-top: 10px;
 }
-section__servicioH_h2 {
+section #servicioH_h2 {
   font-size: 25px;
   padding-top: 10px;
 }
-section__servicioP {
+section #servicioP {
   text-align: center;
   font-weight: 400;
   display: flex;
@@ -55,12 +55,12 @@ section__servicioP {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 25px;
 }
-section__servicioP_h2 {
+section #servicioP_h2 {
   font-size: 25px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
-section__completar {
+section .completar {
   background-color: rgb(120, 240, 136);
   color: rgb(13, 13, 14);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -74,7 +74,7 @@ main {
   background-color: rgb(182, 253, 209);
   grid-area: info;
 }
-main__texto {
+main .texto {
   color: black;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 20px;
@@ -83,7 +83,12 @@ main__texto {
   padding-left: 25px;
   padding-right: 25px;
 }
-main__texto1 {
+main div h3 {
+  text-align: center;
+  font-size: 25px;
+  text-decoration: underline;
+}
+main .texto1 {
   background-color: rgb(241, 210, 250);
   color: black;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -96,6 +101,13 @@ main__texto1 {
   flex-direction: column;
   text-align: center;
   line-height: 1;
+}
+main #limpieza {
+  text-align: left;
+}
+main div h4 {
+  text-align: center;
+  font-weight: 800;
 }
 main__formulario1 {
   padding-bottom: 15px;
@@ -317,27 +329,26 @@ main {
   background-color: rgb(182, 253, 209);
   grid-area: info;
 }
-main__importante {
-  color: black;
+main #mision {
+  border: 3px solid rgb(18, 100, 36);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+main #mision #importante {
+  color: black;
   text-decoration: underline;
   font-size: 35px;
   font-weight: 600;
   text-align: center;
   padding-bottom: 10px;
 }
-main__objetivos {
+main #mision .objetivos {
   color: black;
-  text-align: center;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
   list-style-type: decimal;
   padding-bottom: 10px;
+  text-align: center;
 }
-main__mision {
-  border: 3px solid rgb(18, 100, 36);
-}
-main__presentacion {
+main__div__presentacion {
   color: black;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
@@ -346,7 +357,7 @@ main__presentacion {
   padding-bottom: 20px;
   padding-left: 20px;
 }
-main__final {
+main__div__final {
   color: black;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
@@ -359,17 +370,18 @@ section {
   background-color: rgb(148, 247, 192);
   grid-area: datos;
   display: flex;
+  text-align: center;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   padding: 10px;
   gap: 30px;
 }
-section_div .imagen {
+section__div .imagen {
   background-size: cover;
   background-position: center;
 }
-section_div .titulo {
+section__div .titulo {
   width: 40%;
   height: 50%;
   line-height: 2;
@@ -380,22 +392,22 @@ section_div .titulo {
   flex-direction: column;
   color: black;
 }
-section_div .titulo__h1 {
+section__div .titulo__h1 {
   font-size: 40px;
   border: 7px solid rgb(18, 100, 36);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(rgb(82, 245, 82), yellow);
 }
-section_div .titulo__h2 {
+section__div .titulo__h2 {
   padding: 10px;
   line-height: 1;
   font-size: 25px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-section_div .matricula {
+section__div #matricula {
   text-decoration: underline;
 }
-section_div h1 {
+section__div h1 {
   border: 7px double rgb(18, 100, 36);
   font-size: 70px;
   background: linear-gradient(rgb(77, 209, 77), yellow);

@@ -12,7 +12,7 @@ body {
     grid-template-areas: 
     "datos datos navegador"
     "info info info"
-    ". . contacto";
+    "contacto contacto contacto";
     gap: 7px;
     height: 100vh;
     grid-template-columns: 3fr auto 1fr;
